@@ -65,8 +65,8 @@ enddo
 
 !print *,  "The trace is ", trace
 
-mflops  = dble(DIM)**3/ (cpu_end-cpu_start) / 1.0e6
-mflops2 = dble(DIM)**3/ (wall_end-wall_start)/ 1.0e6
+mflops  = 2 * dble(DIM)**3/ (cpu_end-cpu_start) / 1.0e6
+mflops2 = 2 * dble(DIM)**3/ (wall_end-wall_start)/ 1.0e6
  
 print *, DIM, trace, cpu_end-cpu_start, wall_end-wall_start,  mflops, mflops2
 
